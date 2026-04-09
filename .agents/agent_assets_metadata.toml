@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "YwFd17VS_xC_gbpKcGgri"
@@ -18,3 +17,9 @@ id = "TZqYyzX4v7gEz9ct45_HT"
 uri = "file://artifacts/skipio-homepage/src/assets/images/network-diagram.png"
 type = "image"
 title = "Network nodes diagram"
+
+[[outputs]]
+id = "zVc12dBqY6IQGIE-I63g8"
+uri = "file://skipio-homepage-uxbuilder.txt"
+type = "text"
+title = "Skipio Homepage — UX Builder Shortcode (WordPress)"

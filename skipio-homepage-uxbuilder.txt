@@ -1,0 +1,721 @@
+<!-- ============================================================
+     SKIPIO HOMEPAGE — Flatsome UX Builder Shortcode (WordPress)
+     Paste this into: Pages > Edit > UX Builder > "Edit with Code"
+     ============================================================ -->
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" border="0" padding="0px" padding__sm="0px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12"]
+[ux_html]
+<style>
+.skipio-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;background:#fff;border-bottom:1px solid #F1F5F9;position:sticky;top:0;z-index:999;}
+.skipio-nav .nav-logo{display:flex;align-items:center;gap:8px;text-decoration:none;}
+.skipio-nav .nav-logo svg{flex-shrink:0;}
+.skipio-nav .nav-logo span{font-weight:700;font-size:20px;color:#0F172A;letter-spacing:-0.3px;}
+.skipio-nav .nav-links{display:flex;align-items:center;gap:4px;}
+.skipio-nav .nav-links a{padding:8px 14px;font-size:14px;font-weight:500;color:#374151;text-decoration:none;border-radius:6px;transition:color .2s;}
+.skipio-nav .nav-links a.active{color:#2563EB;}
+.skipio-nav .nav-links a:hover{color:#0F172A;}
+.skipio-nav .nav-right{display:flex;align-items:center;gap:12px;}
+.skipio-nav .classic-login{font-size:14px;font-weight:500;color:#374151;text-decoration:none;}
+.skipio-nav .login-btn{padding:9px 22px;background:#0F172A;color:#fff;font-size:14px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.skipio-nav .login-btn:hover{background:#1E293B;}
+@media(max-width:768px){.skipio-nav .nav-links,.skipio-nav .classic-login{display:none;}}
+</style>
+<nav class="skipio-nav">
+  <a href="/" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#14B8A6"/><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg>
+    <span>skipio</span>
+  </a>
+  <div class="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#">Product</a>
+    <a href="#">Resources &#8964;</a>
+    <a href="#">Pricing</a>
+    <a href="#">Talk to an Expert</a>
+  </div>
+  <div class="nav-right">
+    <a href="#" class="classic-login">Skipio Classic Login</a>
+    <a href="#" class="login-btn">Login</a>
+  </div>
+</nav>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" padding="80px" padding__sm="50px" overflow="visible"]
+[row style="small" h_align="center"]
+[col span="10" span__sm="12" align="center"]
+[ux_html]
+<style>
+.hero-trust-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border:1px solid #E2E8F0;border-radius:99px;background:#fff;font-size:13px;font-weight:500;color:#374151;margin-bottom:28px;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+.hero-h1{font-size:clamp(36px,5vw,62px);font-weight:800;color:#0F172A;line-height:1.1;letter-spacing:-1px;margin-bottom:20px;}
+.hero-sub{font-size:18px;color:#6B7280;margin-bottom:32px;}
+.hero-sub strong{color:#0F172A;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:28px;}
+.hero-btn-primary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:#2563EB;color:#fff;font-size:15px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.hero-btn-primary:hover{background:#1D4ED8;}
+.hero-btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:#fff;border:1.5px solid #D1D5DB;color:#0F172A;font-size:15px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.hero-btn-secondary:hover{background:#F9FAFB;}
+.hero-stars{display:flex;justify-content:center;gap:4px;margin-bottom:8px;}
+.hero-stars svg{width:20px;height:20px;}
+.hero-trust-text{font-size:13px;color:#6B7280;text-align:center;}
+.hero-video-wrap{margin-top:40px;border-radius:18px;overflow:hidden;border:1px solid #E2E8F0;box-shadow:0 8px 40px rgba(0,0,0,0.10);aspect-ratio:16/9;position:relative;background:linear-gradient(135deg,#BFDBFE,#38BDF8,#0369A1);}
+.hero-video-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;}
+.hero-video-logo{display:flex;align-items:center;gap:10px;}
+.hero-video-logo span{color:#fff;font-size:28px;font-weight:700;}
+.hero-play-btn{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.2);border:1.5px solid rgba(255,255,255,0.4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s;}
+.hero-play-btn:hover{background:rgba(255,255,255,0.3);}
+</style>
+
+<div class="hero-trust-pill">
+  <svg width="14" height="14" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l2 5h5l-4 3 1.5 5L12 13l-4.5 2L9 10 5 7h5z"/></svg>
+  Trusted by multi-location brands across automotive, fitness, healthcare, and service industries
+  <svg width="14" height="14" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l2 5h5l-4 3 1.5 5L12 13l-4.5 2L9 10 5 7h5z"/></svg>
+</div>
+
+<h1 class="hero-h1">The Communication Infrastructure<br>Modern Businesses Run On</h1>
+
+<p class="hero-sub">Meet Skip, your Managed AI Employee that <strong>answers every call…</strong></p>
+
+<div class="hero-cta-row">
+  <a href="#" class="hero-btn-primary">See Skip in Action &rarr;</a>
+  <a href="#" class="hero-btn-secondary">How It Works &rarr;</a>
+</div>
+
+<div class="hero-stars">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+</div>
+<p class="hero-trust-text">Trusted by multi-location brands across automotive, fitness, healthcare, and service industries.</p>
+
+<div class="hero-video-wrap">
+  <div class="hero-video-overlay">
+    <div class="hero-video-logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="rgba(255,255,255,0.15)"/><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg>
+      <span>skipio</span>
+    </div>
+    <div class="hero-play-btn">
+      <svg width="22" height="22" fill="white" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+    </div>
+  </div>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── EFFICIENCY ─────────────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" padding="80px" padding__sm="40px"]
+[row h_align="center" style="collapse"]
+[col span="6" span__sm="12" span__md="6" align="left"]
+[ux_html]
+<style>
+.eff-h2{font-size:clamp(26px,3vw,38px);font-weight:800;color:#0F172A;line-height:1.2;margin-bottom:28px;}
+.eff-card{background:#F8FAFC;border:1px solid #E2E8F0;border-radius:20px;padding:28px;}
+.eff-card-title{font-size:16px;font-weight:700;color:#0F172A;margin-bottom:4px;}
+.eff-card-sub{font-size:14px;color:#6B7280;margin-bottom:20px;}
+.eff-divider{border:none;border-top:1px solid #E2E8F0;margin:0 0 18px;}
+.eff-label{font-size:13px;font-weight:700;color:#0F172A;margin-bottom:14px;}
+.eff-list{list-style:none;padding:0;margin:0 0 20px;}
+.eff-list li{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:14px;color:#374151;}
+.eff-list-icon{width:26px;height:26px;border-radius:8px;background:#CCFBF1;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.eff-list-icon svg{width:14px;height:14px;color:#0D9488;}
+.eff-highlight{background:#EFF6FF;border:1px solid #DBEAFE;border-radius:12px;padding:12px 16px;}
+.eff-highlight p{font-size:14px;font-style:italic;font-weight:500;color:#2563EB;margin:0;}
+</style>
+<h2 class="eff-h2">Meet the Most Efficient Employee You'll Ever Hire. Full Frontline Coverage.</h2>
+<div class="eff-card">
+  <p class="eff-card-title">Voice. Text. Web Chat.</p>
+  <p class="eff-card-sub">Always on. Always consistent. Always improving.</p>
+  <hr class="eff-divider">
+  <p class="eff-label">Skipio AI Employees:</p>
+  <ul class="eff-list">
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+      Answer 100% of inbound calls
+    </li>
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+      Capture and qualify every lead
+    </li>
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+      Send intelligent follow-up texts
+    </li>
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+      Route urgent issues correctly
+    </li>
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span>
+      Escalate complex conversations to staff
+    </li>
+    <li>
+      <span class="eff-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+      Push structured data directly into your CRM
+    </li>
+  </ul>
+  <div class="eff-highlight"><p>Human-tuned daily. Enterprise-ready from day one.</p></div>
+</div>
+[/ux_html]
+[/col]
+
+[col span="6" span__sm="12" span__md="6" align="center"]
+[ux_html]
+<style>
+.phone-frame{max-width:260px;margin:0 auto;border-radius:40px;border:6px solid #0F172A;background:#F8FAFC;box-shadow:0 20px 60px rgba(0,0,0,0.15);overflow:hidden;}
+.phone-notch{background:#0F172A;height:24px;border-radius:0 0 16px 16px;width:110px;margin:0 auto;}
+.phone-body{padding:12px 14px 16px;}
+.phone-app-header{display:flex;align-items:center;gap:6px;margin-bottom:14px;}
+.phone-app-header span{font-size:12px;font-weight:700;color:#0F172A;}
+.phone-card{background:#fff;border-radius:16px;border:1px solid #F1F5F9;padding:14px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.phone-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+.phone-card-label{font-size:10px;font-weight:600;color:#374151;}
+.phone-badge{font-size:9px;font-weight:700;background:#10B981;color:#fff;padding:2px 7px;border-radius:99px;}
+.phone-gauge-wrap{text-align:center;margin-bottom:4px;}
+.phone-gauge-wrap svg{width:100px;height:60px;}
+.phone-percent{font-size:24px;font-weight:800;color:#0F172A;text-align:center;margin:-8px 0 2px;}
+.phone-gauge-sub{font-size:9px;color:#9CA3AF;text-align:center;}
+.phone-stat{font-size:20px;font-weight:800;color:#0F172A;}
+.phone-stat-sub{font-size:9px;color:#9CA3AF;}
+.phone-bar-row{display:flex;align-items:flex-end;gap:3px;margin-bottom:4px;}
+.phone-bar{width:8px;border-radius:2px;background:#2563EB;opacity:0.4;}
+.phone-bar.active{opacity:1;}
+.phone-notif{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #F1F5F9;border-radius:12px;padding:10px 12px;margin-bottom:6px;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
+.phone-notif-icon{width:28px;height:28px;border-radius:50%;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.phone-notif-icon svg{width:12px;height:12px;}
+.phone-notif-title{font-size:10px;font-weight:700;color:#0F172A;}
+.phone-notif-sub{font-size:9px;color:#6B7280;}
+</style>
+<div class="phone-frame">
+  <div class="phone-notch"></div>
+  <div class="phone-body">
+    <div class="phone-app-header">
+      <svg width="14" height="14" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#14B8A6"/><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg>
+      <span>skipio</span>
+    </div>
+    <!-- Sentiment card -->
+    <div class="phone-card">
+      <div class="phone-card-header">
+        <span class="phone-card-label">Sentiment Score</span>
+        <span class="phone-badge">this month +3%</span>
+      </div>
+      <div class="phone-gauge-wrap">
+        <svg viewBox="0 0 120 70">
+          <path d="M15,65 A50,50 0 0,1 105,65" fill="none" stroke="#E5E7EB" stroke-width="10" stroke-linecap="round"/>
+          <path d="M15,65 A50,50 0 0,1 105,65" fill="none" stroke="#10B981" stroke-width="10" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="20"/>
+          <circle cx="104" cy="65" r="5" fill="#10B981"/>
+        </svg>
+      </div>
+      <p class="phone-percent">98%</p>
+      <p class="phone-gauge-sub">Sentiment analysis average</p>
+    </div>
+    <!-- Actions card -->
+    <div class="phone-card">
+      <div class="phone-card-header">
+        <span class="phone-card-label">Actions Triggered</span>
+        <span class="phone-badge">this month +2%</span>
+      </div>
+      <div style="display:flex;align-items:flex-end;gap:8px;margin-bottom:4px;">
+        <span class="phone-stat">130,362</span>
+        <div class="phone-bar-row">
+          <div class="phone-bar" style="height:14px;"></div>
+          <div class="phone-bar" style="height:18px;"></div>
+          <div class="phone-bar" style="height:22px;"></div>
+          <div class="phone-bar active" style="height:28px;"></div>
+          <div class="phone-bar" style="height:24px;"></div>
+        </div>
+      </div>
+      <p class="phone-stat-sub">Follow-ups automated</p>
+    </div>
+    <!-- Notifications -->
+    <div class="phone-notif">
+      <div class="phone-notif-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      <div>
+        <p class="phone-notif-title">Booked Call <span style="font-weight:400;color:#9CA3AF;">Today 09:17</span></p>
+        <p class="phone-notif-sub">Appointment for 4:30 PM EST</p>
+      </div>
+    </div>
+    <div class="phone-notif">
+      <div class="phone-notif-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      <div>
+        <p class="phone-notif-title">Booked Call <span style="font-weight:400;color:#9CA3AF;">Today 11:45</span></p>
+        <p class="phone-notif-sub">Appointment for 5:30 PM EST</p>
+      </div>
+    </div>
+  </div>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── NETWORK / WHY MULTI-LOCATION ─────────────────────────── -->
+[section bg_color="rgb(10,22,40)" padding="80px" padding__sm="50px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12" align="center"]
+[ux_html]
+<style>
+.net-section{color:#fff;}
+.net-h2{font-size:clamp(26px,4vw,48px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:12px;text-align:center;}
+.net-sub{font-size:18px;color:rgba(255,255,255,0.6);font-style:italic;text-align:center;margin-bottom:40px;}
+.net-layout{display:flex;gap:24px;align-items:flex-start;}
+.net-tabs{display:flex;flex-direction:column;gap:10px;min-width:190px;}
+.net-tab{padding:10px 18px;border-radius:99px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.5);cursor:pointer;text-align:left;background:none;border:none;transition:all .2s;}
+.net-tab.active{background:#2563EB;color:#fff;box-shadow:0 4px 20px rgba(37,99,235,0.35);}
+.net-tab:hover:not(.active){color:#fff;}
+.net-card{flex:1;background:rgba(13,27,46,0.8);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:32px;}
+.net-card-h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:10px;}
+.net-card-p{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:24px;}
+.net-bullets{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-bottom:24px;}
+.net-bullet{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:rgba(255,255,255,0.8);}
+.net-bullet svg{width:16px;height:16px;color:#2563EB;flex-shrink:0;margin-top:1px;}
+.net-cta-row{text-align:center;margin-top:40px;}
+.net-cta-italic{font-size:15px;color:rgba(255,255,255,0.55);font-style:italic;margin-bottom:20px;}
+.net-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.net-btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border:1.5px solid rgba(255,255,255,0.25);color:#fff;font-size:14px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.net-btn:hover{background:rgba(255,255,255,0.1);}
+@media(max-width:768px){.net-layout{flex-direction:column;}.net-tabs{flex-direction:row;flex-wrap:wrap;}.net-bullets{grid-template-columns:1fr;}}
+</style>
+<div class="net-section">
+  <h2 class="net-h2">Why Multi-Location Brands Replace Missed Calls<br>with Managed AI Employees</h2>
+  <p class="net-sub">Voicemail is lost revenue. Hold time is churn.</p>
+  <div class="net-layout">
+    <div class="net-tabs">
+      <button class="net-tab active">Full Coverage</button>
+      <button class="net-tab">Continuous Optimization</button>
+      <button class="net-tab">Structured Data</button>
+    </div>
+    <div class="net-card">
+      <h3 class="net-card-h3">Every Call. Every Location. Every Hour.</h3>
+      <p class="net-card-p">Skip ensures every customer interaction is captured, routed, and resolved across all locations without relying on local staffing.</p>
+      <div class="net-bullets">
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>24/7 call coverage across every location</div>
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Consistent brand voice across all locations</div>
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Overflow handling during peak hours</div>
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Zero missed calls due to staffing gaps</div>
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Smart routing to correct location or department</div>
+        <div class="net-bullet"><svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Instant AI response to every inbound inquiry</div>
+      </div>
+    </div>
+  </div>
+  <div class="net-cta-row">
+    <p class="net-cta-italic">From conversation to operational insight instantly.</p>
+    <div class="net-btns">
+      <a href="#" class="net-btn">See Skipio In Action &rarr;</a>
+      <a href="#" class="net-btn">How It Works &rarr;</a>
+    </div>
+  </div>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── LOGO STRIP ─────────────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" border="top" padding="36px" padding__sm="24px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12" align="center"]
+[ux_html]
+<style>
+.logos-strip{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:32px 48px;}
+.logos-strip .brand{color:#9CA3AF;font-weight:600;font-size:15px;letter-spacing:0.5px;transition:color .2s;cursor:default;}
+.logos-strip .brand:hover{color:#374151;}
+.logos-strip .brand-light{font-weight:300;letter-spacing:4px;text-transform:uppercase;}
+.logos-strip .brand-italic{font-style:italic;font-weight:300;}
+.logos-strip .brand-black{font-weight:900;letter-spacing:-0.5px;}
+.logos-strip .brand-red{color:#E53E3E;}
+.logos-strip .brand-pink{color:#D63384;}
+.logos-strip .brand-green{color:#059669;}
+</style>
+<div class="logos-strip">
+  <span class="brand brand-light">Elase</span>
+  <span class="brand brand-italic">the domani</span>
+  <span class="brand brand-black brand-red">9ROUND</span>
+  <span class="brand" style="font-size:11px;font-weight:700;line-height:1.3;text-align:center;">Krista Mashore<br>COACHING</span>
+  <span class="brand brand-black" style="letter-spacing:3px;">EVOFIT</span>
+  <span class="brand brand-pink" style="letter-spacing:1px;">MARY KAY</span>
+  <span class="brand brand-green" style="font-weight:700;">CleanStart</span>
+  <span class="brand">Tutor Doctor</span>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── STATS + BEFORE AI ─────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" padding="80px" padding__sm="40px"]
+[row h_align="center" style="collapse"]
+[col span="6" span__sm="12"]
+[ux_html]
+<style>
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.stat-card{background:#fff;border:1px solid #E2E8F0;border-radius:20px;padding:22px;box-shadow:0 1px 6px rgba(0,0,0,0.05);}
+.stat-card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.stat-value{font-size:clamp(28px,3vw,38px);font-weight:800;color:#0F172A;}
+.stat-icon{width:32px;height:32px;border-radius:10px;background:#CCFBF1;display:flex;align-items:center;justify-content:center;}
+.stat-icon svg{width:16px;height:16px;stroke:#0D9488;}
+.stat-label{font-size:12px;color:#6B7280;line-height:1.4;}
+</style>
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-card-top">
+      <span class="stat-value">+258%</span>
+      <div class="stat-icon"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+    </div>
+    <p class="stat-label">Increase in Answered Calls</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-card-top">
+      <span class="stat-value">74%</span>
+      <div class="stat-icon"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+    </div>
+    <p class="stat-label">Reduction in Missed Opportunities</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-card-top">
+      <span class="stat-value">48%</span>
+      <div class="stat-icon"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+    </div>
+    <p class="stat-label">Faster Resolution Times</p>
+  </div>
+  <div class="stat-card">
+    <div class="stat-card-top">
+      <span class="stat-value">82%</span>
+      <div class="stat-icon"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><line x1="17" y1="17" x2="3" y2="17"/><line x1="21" y1="7" x2="7" y2="7"/><polyline points="3 7 7 11 3 15"/><polyline points="21 17 17 21 13 17"/></svg></div>
+    </div>
+    <p class="stat-label">Fewer Unnecessary Transfers</p>
+  </div>
+</div>
+[/ux_html]
+[/col]
+
+[col span="6" span__sm="12" align="left"]
+[ux_html]
+<style>
+.before-ai{padding-left:40px;}
+.before-ai-stars{display:flex;gap:4px;margin-bottom:12px;}
+.before-ai-stars svg{width:20px;height:20px;}
+.before-ai-trust{display:flex;align-items:center;gap:8px;margin-bottom:20px;}
+.before-ai-trust svg{width:16px;height:16px;stroke:#0D9488;}
+.before-ai-trust span{font-size:14px;font-weight:500;color:#0D9488;}
+.before-ai h2{font-size:clamp(24px,3vw,36px);font-weight:800;color:#0F172A;line-height:1.2;margin-bottom:16px;}
+.before-ai p{font-size:15px;color:#6B7280;line-height:1.7;}
+@media(max-width:768px){.before-ai{padding-left:0;margin-top:32px;}}
+</style>
+<div class="before-ai">
+  <div class="before-ai-stars">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+  </div>
+  <div class="before-ai-trust">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+    <span>Trusted By 100+ Companies Nationwide</span>
+  </div>
+  <h2>Before AI Was Trending, We Were Building It</h2>
+  <p>From automotive and fitness to healthcare and service industries, more than 38,000 businesses rely on Skipio to capture opportunities, reduce missed calls, and scale communication with confidence.</p>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── MEET YOUR BEST EMPLOYEE (COMPARISON) ─────────────── -->
+[section padding="80px" padding__sm="50px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12"]
+[ux_html]
+<style>
+.comp-section{background:linear-gradient(135deg,#0A1628 0%,#0F2A4A 40%,#0A3060 70%,#0D4880 100%);border-radius:28px;padding:60px 48px;position:relative;overflow:hidden;color:#fff;}
+.comp-section::after{content:'';position:absolute;bottom:-80px;right:-80px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(37,99,235,0.15);}
+.comp-h2{font-size:clamp(28px,4vw,46px);font-weight:800;text-align:center;margin-bottom:36px;}
+.comp-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.comp-card-trad{background:rgba(13,27,46,0.8);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:28px;}
+.comp-card-skip{background:rgba(30,58,95,0.6);border:1px solid rgba(37,99,235,0.3);border-radius:20px;padding:28px;position:relative;overflow:hidden;}
+.comp-card-skip::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#38BDF8,#2563EB,#7C3AED);}
+.comp-card-title{font-size:16px;font-weight:700;color:#fff;text-align:center;margin-bottom:10px;}
+.comp-price-tag{text-align:center;margin-bottom:16px;}
+.comp-price-tag .price-box{display:inline-block;padding:8px 20px;border-radius:12px;font-size:13px;}
+.comp-card-trad .price-box{background:rgba(30,45,61,1);}
+.comp-card-skip .price-box{background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.2);}
+.comp-price-label{font-size:11px;color:rgba(255,255,255,0.6);}
+.comp-price-label strong{color:#fff;}
+.comp-skip-header{background:linear-gradient(90deg,#2563EB,#38BDF8);border-radius:12px;padding:10px 20px;text-align:center;margin-bottom:10px;}
+.comp-skip-header p{font-size:16px;font-weight:700;color:#fff;margin:0;}
+.comp-divider{border:none;border-top:1px solid rgba(255,255,255,0.1);margin:0 0 16px;}
+.comp-list{list-style:none;padding:0;margin:0;}
+.comp-list li{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;font-size:13px;color:rgba(255,255,255,0.75);}
+.comp-icon-x{width:18px;height:18px;border-radius:50%;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.comp-icon-x svg{width:11px;height:11px;stroke:#EF4444;}
+.comp-icon-check{width:18px;height:18px;border-radius:50%;background:rgba(37,99,235,0.15);border:1px solid rgba(96,165,250,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.comp-icon-check svg{width:11px;height:11px;stroke:#60A5FA;}
+.comp-footer{text-align:center;margin-top:36px;}
+.comp-footer-italic{font-size:14px;color:rgba(255,255,255,0.5);font-style:italic;margin-bottom:20px;}
+.comp-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.comp-btn{display:inline-flex;align-items:center;gap:6px;padding:12px 26px;border:1.5px solid rgba(255,255,255,0.25);color:#fff;font-size:14px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.comp-btn:hover{background:rgba(255,255,255,0.1);}
+.comp-btn-dark{background:rgba(30,45,61,1);}
+@media(max-width:768px){.comp-cards{grid-template-columns:1fr;}.comp-section{padding:40px 24px;}}
+</style>
+<div class="comp-section">
+  <h2 class="comp-h2">Meet Your Best Employee</h2>
+  <div class="comp-cards">
+    <!-- Traditional -->
+    <div class="comp-card-trad">
+      <p class="comp-card-title">Traditional Hire</p>
+      <div class="comp-price-tag">
+        <div class="price-box">
+          <p class="comp-price-label">Estimated Cost: <strong>$45,000&ndash;$65,000 / year</strong></p>
+        </div>
+      </div>
+      <hr class="comp-divider">
+      <ul class="comp-list">
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Limited to scheduled hours</li>
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Missed calls during breaks, lunch, and after-hours</li>
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Inconsistent answers and training gaps</li>
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Turnover, sick days, and management overhead</li>
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Manual note taking and incomplete data</li>
+        <li><span class="comp-icon-x"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Requires hiring, onboarding, and supervision</li>
+      </ul>
+    </div>
+    <!-- Skip AI -->
+    <div class="comp-card-skip">
+      <div class="comp-skip-header"><p>Skip &mdash; Your AI Employee</p></div>
+      <div class="comp-price-tag">
+        <div class="price-box">
+          <p class="comp-price-label">Starting at <strong>$599 / month</strong></p>
+        </div>
+      </div>
+      <hr class="comp-divider">
+      <ul class="comp-list">
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>100% call coverage, day and night</li>
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Instant responses to every caller</li>
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Brand-consistent conversations every time</li>
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Smart escalation to the right team member</li>
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Structured, CRM-ready conversation data</li>
+        <li><span class="comp-icon-check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>No hiring, no turnover, no supervision</li>
+      </ul>
+    </div>
+  </div>
+  <div class="comp-footer">
+    <p class="comp-footer-italic">Hire your most reliable employee for less than the cost of a single shift.</p>
+    <div class="comp-btns">
+      <a href="#" class="comp-btn">See Skip In Action &rarr;</a>
+      <a href="#" class="comp-btn comp-btn-dark">How It Works &rarr;</a>
+    </div>
+  </div>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── PROCESS: LAUNCH QUICKLY ───────────────────────────── -->
+[section bg_color="rgb(255,255,255)" padding="80px" padding__sm="40px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12" align="center"]
+[ux_html]
+<style>
+.process-h2{font-size:clamp(26px,3.5vw,40px);font-weight:800;color:#0F172A;margin-bottom:40px;text-align:center;}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px;}
+.process-card{background:#fff;border:1px solid #E2E8F0;border-radius:20px;padding:24px;box-shadow:0 1px 6px rgba(0,0,0,0.05);}
+.process-visual{height:160px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative;}
+.process-ring{width:120px;height:120px;border-radius:50%;border:2px dashed #E2E8F0;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+.process-center-pin{width:38px;height:38px;border-radius:50%;background:#2563EB;box-shadow:0 4px 16px rgba(37,99,235,0.35);display:flex;align-items:center;justify-content:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;}
+.process-center-pin svg{width:18px;height:18px;}
+.orbit-icon{width:32px;height:32px;border-radius:50%;background:#fff;border:1px solid #E2E8F0;box-shadow:0 1px 4px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;position:absolute;}
+.orbit-icon svg{width:14px;height:14px;stroke:#6B7280;}
+.process-week{font-size:13px;font-weight:600;color:#0D9488;margin-bottom:6px;}
+.process-title{font-size:15px;font-weight:700;color:#0F172A;line-height:1.4;}
+.process-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.proc-btn-primary{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;background:#2563EB;color:#fff;font-size:14px;font-weight:600;border-radius:99px;text-decoration:none;}
+.proc-btn-secondary{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;background:#fff;border:1.5px solid #D1D5DB;color:#0F172A;font-size:14px;font-weight:600;border-radius:99px;text-decoration:none;}
+@media(max-width:768px){.process-grid{grid-template-columns:1fr;}}
+</style>
+<h2 class="process-h2">Launch Quickly. Improve Daily.</h2>
+<div class="process-grid">
+  <!-- Week 1 -->
+  <div class="process-card">
+    <div class="process-visual">
+      <div class="process-ring"></div>
+      <div class="orbit-icon" style="top:8px;left:50%;transform:translateX(-50%)"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2m0 16v2m7.07-4.93l-1.41-1.41M4.93 19.07l1.41-1.41M2 12h2m16 0h2"/></svg></div>
+      <div class="orbit-icon" style="bottom:8px;left:50%;transform:translateX(-50%)"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 14l4-8 4 8-4-2-4 2z"/></svg></div>
+      <div class="orbit-icon" style="left:8px;top:50%;transform:translateY(-50%)"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <div class="orbit-icon" style="right:8px;top:50%;transform:translateY(-50%)"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      <div class="process-center-pin"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg></div>
+    </div>
+    <p class="process-week">Week 1</p>
+    <h3 class="process-title">Identify Goals, Generate Scripts, Define Rules</h3>
+  </div>
+  <!-- Week 2 -->
+  <div class="process-card">
+    <div class="process-visual">
+      <div class="process-ring"></div>
+      <div class="orbit-icon" style="top:8px;left:50%;transform:translateX(-50%)"><span style="font-size:11px;font-weight:900;color:#4A154B;">S</span></div>
+      <div class="orbit-icon" style="bottom:8px;left:50%;transform:translateX(-50%)"><span style="font-size:11px;font-weight:900;color:#1877F2;">f</span></div>
+      <div class="orbit-icon" style="left:8px;top:50%;transform:translateY(-50%)"><span style="font-size:10px;font-weight:700;color:#0A66C2;">in</span></div>
+      <div class="orbit-icon" style="right:8px;top:50%;transform:translateY(-50%)"><span style="font-size:11px;font-weight:900;color:#00A1E0;">&#x2731;</span></div>
+      <div class="process-center-pin"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg></div>
+    </div>
+    <p class="process-week">Week 2</p>
+    <h3 class="process-title">Build &amp; QA, Test Edge Cases, Go Live (Beta)</h3>
+  </div>
+  <!-- Week 3+ -->
+  <div class="process-card">
+    <div class="process-visual" style="flex-direction:column;">
+      <div style="background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:14px 16px;width:160px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:10px;font-weight:600;color:#374151;">Revenue</span>
+          <span style="font-size:9px;background:#D1FAE5;color:#059669;font-weight:700;padding:2px 6px;border-radius:99px;">+12%</span>
+        </div>
+        <svg viewBox="0 0 130 50" style="width:100%;height:38px;">
+          <polyline points="0,45 30,38 60,28 90,18 120,8" fill="none" stroke="#DBEAFE" stroke-width="1.5"/>
+          <polyline points="0,45 30,38 60,28 90,18 120,8" fill="none" stroke="#2563EB" stroke-width="2"/>
+          <circle cx="120" cy="8" r="4" fill="#2563EB"/>
+        </svg>
+        <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
+          <div style="width:22px;height:22px;border-radius:50%;background:#CCFBF1;display:flex;align-items:center;justify-content:center;">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <span style="font-size:10px;color:#6B7280;">Revenue growing</span>
+        </div>
+      </div>
+    </div>
+    <p class="process-week">Week 3+</p>
+    <h3 class="process-title">Expand Coverage, Tune Prompts, Add Additional Goals</h3>
+  </div>
+</div>
+<div class="process-btns">
+  <a href="#" class="proc-btn-primary">See Skip in Action &rarr;</a>
+  <a href="#" class="proc-btn-secondary">How It Works &rarr;</a>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── BUILT FOR MULTI-LOCATION OPERATORS ───────────────── -->
+[section bg_color="rgb(248,250,252)" padding="80px" padding__sm="50px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12" align="center"]
+[ux_html]
+<style>
+.feat-h2{font-size:clamp(26px,3.5vw,40px);font-weight:800;color:#0F172A;text-align:center;margin-bottom:24px;}
+.feat-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:52px;}
+.feat-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#fff;border:1.5px solid #E2E8F0;border-radius:99px;font-size:14px;font-weight:500;color:#374151;box-shadow:0 1px 4px rgba(0,0,0,0.04);transition:border-color .2s,color .2s;}
+.feat-pill:hover{border-color:rgba(37,99,235,0.3);color:#2563EB;}
+.feat-pill-icon{width:26px;height:26px;border-radius:50%;background:#CCFBF1;display:flex;align-items:center;justify-content:center;}
+.feat-pill-icon svg{width:14px;height:14px;stroke:#0D9488;}
+.trust-card{border-radius:28px;padding:60px 48px;position:relative;overflow:hidden;background:linear-gradient(135deg,#0A1628 0%,#0F2A4A 40%,#0A3060 70%,#0369A1 100%);}
+.trust-card-h3{font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff;text-align:center;margin-bottom:60px;}
+.trust-stats-grid{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;min-height:200px;}
+.trust-center{width:56px;height:56px;border-radius:50%;background:#2563EB;box-shadow:0 8px 30px rgba(37,99,235,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto;}
+.trust-stat-bubble{background:rgba(255,255,255,0.92);border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:10px;flex:1;min-width:200px;max-width:240px;}
+.trust-stat-icon{width:32px;height:32px;border-radius:50%;background:#EFF6FF;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.trust-stat-icon svg{width:15px;height:15px;stroke:#2563EB;}
+.trust-stat-text{font-size:12px;font-weight:500;color:#0F172A;line-height:1.4;}
+.trust-stat-text strong{font-weight:700;}
+@media(max-width:768px){.trust-card{padding:40px 24px;}.trust-stats-grid{flex-direction:column;align-items:center;}}
+</style>
+<h2 class="feat-h2">Built for Multi-Location Operators Who Rely on Inbound Conversations</h2>
+<div class="feat-pills">
+  <span class="feat-pill"><span class="feat-pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span>Auto Service Locations</span>
+  <span class="feat-pill"><span class="feat-pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 19V7M20 5v14M12 3v18M8 7H4m16 0h-4M8 19H4m16 0h-4"/></svg></span>Chiropractic Networks</span>
+  <span class="feat-pill"><span class="feat-pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6.5 6.5h11M6.5 12h11M6.5 17.5h11"/><circle cx="4" cy="6.5" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17.5" r="1"/></svg></span>Fitness Brands</span>
+  <span class="feat-pill"><span class="feat-pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span>Home Services</span>
+  <span class="feat-pill"><span class="feat-pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Healthcare Clinics</span>
+</div>
+<div class="trust-card">
+  <h3 class="trust-card-h3">Trusted Infrastructure For Customer Communication</h3>
+  <div class="trust-stats-grid">
+    <div class="trust-stat-bubble">
+      <div class="trust-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+      <span class="trust-stat-text"><strong>38,000</strong> businesses served since 2016</span>
+    </div>
+    <div class="trust-center">
+      <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg>
+    </div>
+    <div class="trust-stat-bubble">
+      <div class="trust-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <span class="trust-stat-text"><strong>Millions</strong> of customer conversations handled daily</span>
+    </div>
+    <div class="trust-stat-bubble">
+      <div class="trust-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+      <span class="trust-stat-text">Built for <strong>multi-location</strong> operations</span>
+    </div>
+    <div class="trust-stat-bubble" style="margin-left:auto;">
+      <div class="trust-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <span class="trust-stat-text"><strong>Secure</strong>, scalable communication architecture</span>
+    </div>
+  </div>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── PRE-FOOTER CTA ─────────────────────────────────────── -->
+[section bg_color="rgb(255,255,255)" border="top" padding="80px" padding__sm="50px"]
+[row style="small" h_align="center"]
+[col span="8" span__sm="12" align="center"]
+[ux_html]
+<style>
+.prefooter-logo{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:16px;}
+.prefooter-logo span{font-size:18px;font-weight:700;color:#0F172A;}
+.prefooter-h2{font-size:clamp(22px,3vw,32px);font-weight:800;color:#0F172A;margin-bottom:12px;text-align:center;line-height:1.3;}
+.prefooter-sub{font-size:15px;color:#6B7280;text-align:center;margin-bottom:32px;}
+.prefooter-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.pf-btn-primary{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;background:#2563EB;color:#fff;font-size:15px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.pf-btn-primary:hover{background:#1D4ED8;}
+.pf-btn-secondary{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;background:#fff;border:1.5px solid #D1D5DB;color:#0F172A;font-size:15px;font-weight:600;border-radius:99px;text-decoration:none;transition:background .2s;}
+.pf-btn-secondary:hover{background:#F9FAFB;}
+</style>
+<div class="prefooter-logo">
+  <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#14B8A6"/><circle cx="16" cy="14" r="6" fill="white"/><path d="M16 20 C10 20 7 25 7 28 L25 28 C25 25 22 20 16 20Z" fill="white"/></svg>
+  <span>skipio</span>
+</div>
+<h2 class="prefooter-h2">Skipio is building the Managed AI Employee category for customer conversations.</h2>
+<p class="prefooter-sub">We are the communication infrastructure modern multi-location businesses run on.</p>
+<div class="prefooter-btns">
+  <a href="#" class="pf-btn-primary">See Skip in Action &rarr;</a>
+  <a href="#" class="pf-btn-secondary">How It Works &rarr;</a>
+</div>
+[/ux_html]
+[/col]
+[/row]
+[/section]
+
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+[section bg_color="rgb(248,250,252)" border="top" padding="20px" padding__sm="16px"]
+[row style="small" h_align="center"]
+[col span="12" span__sm="12" align="center"]
+[ux_html]
+<p style="font-size:13px;color:#9CA3AF;margin:0;">&copy; 2026 Skipio. All Right Reserved</p>
+[/ux_html]
+[/col]
+[/row]
+[/section]
