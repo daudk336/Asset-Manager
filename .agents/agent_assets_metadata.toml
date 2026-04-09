@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "YwFd17VS_xC_gbpKcGgri"
+uri = "file://artifacts/skipio-homepage/src/assets/images/hero-mockup.png"
+type = "image"
+title = "Hero phone app UI mockup"
+
+[[generated]]
+id = "nCrAwWtIbV8n7XpLUFikZ"
+uri = "file://artifacts/skipio-homepage/src/assets/images/efficiency-mockup.png"
+type = "image"
+title = "Efficiency employee UI mockup"
+
+[[generated]]
+id = "TZqYyzX4v7gEz9ct45_HT"
+uri = "file://artifacts/skipio-homepage/src/assets/images/network-diagram.png"
+type = "image"
+title = "Network nodes diagram"
